@@ -1,0 +1,34 @@
+{
+  "name": "rubin/adapter-guzzle",
+  "description": "Guzzle with PSR-log quick init",
+  "keywords": ["rubin", "guzzle", "psr-log", "fabric"],
+  "authors": [
+    {
+      "name": "Roman Shashurin",
+      "email": "dalamar84@mail.ru"
+    }
+  ],
+  "type": "library",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.4.0",
+    "psr/log": "^1.1",
+    "guzzlehttp/guzzle": "^6.0"
+  },
+  "autoload" : {
+    "psr-4": {
+      "rubin\\adapter\\guzzle\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}
